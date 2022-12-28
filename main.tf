@@ -39,3 +39,7 @@ data "vault_azure_access_credentials" "creds" {
   num_seconds_between_tests   = 1
   max_cred_validation_seconds = 300 
 }
+
+module "datainfra" {
+    source = "./module"
+}
