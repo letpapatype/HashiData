@@ -24,6 +24,10 @@ terraform {
       source = "hashicorp/terraform"
       version = "1.0.2"
     }
+    tfe = {
+      source = "hashicorp/tfe"
+      version = "0.40.0"
+    }
   }
 }
 # TODO: Get proper creds https://developer.hashicorp.com/vault/tutorials/secrets-management/azure-secrets
@@ -45,6 +49,10 @@ provider "random" {
 }
 
 provider "terraform" {
+  # Configuration options
+}
+
+provider "tfe" {
   # Configuration options
 }
 
