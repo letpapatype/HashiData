@@ -1,4 +1,12 @@
 terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "jovannewland"
+
+    workspaces {
+      prefix = "azure-data-"
+    }
+  }
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"
@@ -11,6 +19,10 @@ terraform {
     random = {
       source = "hashicorp/random"
       version = "3.4.3"
+    }
+    terraform = {
+      source = "hashicorp/terraform"
+      version = "1.0.2"
     }
   }
 }
@@ -29,6 +41,10 @@ provider "azurerm" {
 }
 
 provider "random" {
+  # Configuration options
+}
+
+provider "terraform" {
   # Configuration options
 }
 
