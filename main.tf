@@ -1,10 +1,13 @@
+# TODO: Login to tf cli, and fix function 'refer to TUAR' for proper prefix function
+# HCP Workspace https://developer.hashicorp.com/terraform/language/settings/backends/remote
+
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
     organization = "jovannewland"
 
     workspaces {
-      prefix = "azure-data-"
+      name = "azure-hashi-data"
     }
   }
   required_providers {

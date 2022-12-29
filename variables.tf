@@ -21,7 +21,7 @@ variable "tokenname" {
 }
 
 variable "vault_role" {
-    default = ""
+    default = "hashi_role"
 }
 
 variable "subscription_id" {
@@ -38,4 +38,8 @@ variable "client_secret" {
 
 variable "tenant_id" {
     default = ""
+}
+
+variable "location" {
+    default = "West US"
 }

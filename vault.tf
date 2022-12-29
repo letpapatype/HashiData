@@ -16,7 +16,7 @@ resource "vault_azure_secret_backend" "azure" {
 
 resource "vault_azure_secret_backend_role" "azure_role" {
   backend                     = vault_azure_secret_backend.azure.path
-  role                        = "hashi_role"
+  role                        = var.vault_role
   ttl                         = 300
   max_ttl                     = 600
 
