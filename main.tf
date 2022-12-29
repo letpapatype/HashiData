@@ -3,12 +3,6 @@
 
 terraform {
   backend "remote" {
-    hostname = "app.terraform.io"
-    organization = "jovannewland"
-
-    workspaces {
-      name = "azure-hashi-data"
-    }
   }
   required_providers {
     azurerm = {
@@ -48,10 +42,6 @@ provider "azurerm" {
 }
 
 provider "random" {
-  # Configuration options
-}
-
-provider "terraform" {
   # Configuration options
 }
 
