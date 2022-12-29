@@ -17,10 +17,10 @@ terraform {
       source = "hashicorp/random"
       version = "3.4.3"
     }
-    terraform = {
-      source = "hashicorp/terraform"
-      version = "1.0.2"
-    }
+    # terraform = {
+    #   source = "hashicorp/terraform"
+    #   version = "1.0.2"
+    # }
     tfe = {
       source = "hashicorp/tfe"
       version = "0.40.0"
