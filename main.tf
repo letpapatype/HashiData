@@ -70,3 +70,11 @@ data "vault_azure_access_credentials" "creds" {
 module "datainfra" {
     source = "./module"
 }
+
+resource "random_string" "random" {
+  length           = 3
+  special          = false
+  lower = true
+  min_lower = 3
+}
+
