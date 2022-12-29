@@ -1,14 +1,3 @@
-resource "random_string" "random" {
-  length           = 3
-  special          = false
-  lower = true
-  min_lower = 3
-}
-
-variable "project" {
-    default = "roving${random_string.random.result}"
-}
-
 variable "vaultaddress" {
     default = ""
 }
