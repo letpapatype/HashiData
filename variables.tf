@@ -5,9 +5,9 @@ variable "vaulttoken" {
     default = ""
 }
 
-variable "tokenname" {
-    default = ""
-}
+# variable "tokenname" {
+#     default = "HashiData"
+# }
 
 variable "vault_role" {
     default = "hashi_role"
