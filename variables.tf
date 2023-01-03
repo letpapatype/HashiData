@@ -1,34 +1,38 @@
 variable "vaultaddress" {
-    default = ""
+  default = ""
 }
 variable "vaulttoken" {
-    default = ""
+  default = ""
 }
 
-# variable "tokenname" {
-#     default = "HashiData"
-# }
+variable "tokenname" {
+  default = "HashiData"
+}
 
 variable "vault_role" {
-    default = "hashi_role"
+  default = "hashi_role"
 }
 
 variable "subscription_id" {
-    default = ""
+  default = ""
 }
 
 variable "client_id" {
-    default = ""
+  default = ""
 }
 
 variable "client_secret" {
-    default = ""
+  default = ""
 }
 
 variable "tenant_id" {
-    default = ""
+  default = ""
 }
 
 variable "location" {
-    default = "West US"
+  default = "East US"
+}
+
+variable "world" {
+  default = "0.0.0.0"
 }
